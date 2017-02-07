@@ -1,0 +1,32 @@
+<% include includes/header.ejs %>
+
+      <title>Sentinel | Home Automation Security System</title>
+</head>
+<body>
+<% include includes/navbar.ejs %>
+<h6 class="center-align top-margin-small-2"> Login to Sentinel</h6>
+<div class="form-login top-margin-small-2">
+    <fieldset>
+        <legend></legend>
+            <form method="post" action="/account/login">
+              <div class="row">
+                <div class="input-field">
+                  <label for="email">Email</label>
+                  <input id="email" type="text" placeholder="Email" name="email" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" placeholder="Password" name="password" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <input type="submit" class="btn" value="Login" />
+                </div>
+              </div>
+            </form>
+    </fieldset>
+</div>
+<% include includes/footer.ejs %>

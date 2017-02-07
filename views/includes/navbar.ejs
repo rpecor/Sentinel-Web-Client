@@ -1,0 +1,19 @@
+<nav class="white">
+  <div class="container">
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo black-text"> Sentinel </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <% if(user == null || user == undefined || user == "") { %>
+          <li><a href="/account/login" class="black-text">Login</a></li>
+          <li><a href="/account/register" class="black-text">Register</a></li>
+          <% } else { %>
+            <li><a href="/#/profile" class="black-text">Welcome, <%= user.firstName %></a></li>
+            <li><a href="/#/" class="black-text">Home</a></li>
+            <li><a href="/#/controlpanel" class="black-text">Control Panel</a></li>
+            <li><a href="/account/logout" class="black-text">Logout</a></li>
+          <% } %>
+        </ul>
+    </div>
+  </div>
+</nav>
