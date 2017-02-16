@@ -30,6 +30,10 @@
   margin-top: 80px !important;
 }
 
+.black-text {
+  color: #000000;
+}
+
 .form-login {
     width:250px;
     margin: 0 auto;

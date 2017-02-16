@@ -1,9 +1,8 @@
 <nav class="white">
   <div class="container">
-
     <div class="nav-wrapper">
       <a href="#" class="brand-logo black-text"> Sentinel </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down">
           <% if(user == null || user == undefined || user == "") { %>
           <li><a href="/account/login" class="black-text">Login</a></li>
           <li><a href="/account/register" class="black-text">Register</a></li>
@@ -14,6 +13,15 @@
             <li><a href="/account/logout" class="black-text">Logout</a></li>
           <% } %>
         </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <div class="div-profile-picture">
+            
+          </div>
+          <li><a href="/home"> Home </a></li>
+          <li><a href="/about"> About </a></li>
+          <li><a href="/contact"> Contact </a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons black-text">menu</i></a>
     </div>
   </div>
 </nav>
