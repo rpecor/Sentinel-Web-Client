@@ -4,6 +4,14 @@ export default React.createClass({
   render() {
     return (
       <div>
+         <ul id="tabs-swipe-demo" className="tabs">
+            <li className="tab col s3"><a href="#test-swipe-1">Blinds</a></li>
+            <li className="tab col s3"><a className="active" href="#test-swipe-2">Lights</a></li>
+            <li className="tab col s3"><a href="#test-swipe-3">Locks</a></li>
+          </ul>
+          <div id="test-swipe-1" className="col s12 blue">Test 1</div>
+          <div id="test-swipe-2" className="col s12 red">Test 2</div>
+          <div id="test-swipe-3" className="col s12 green">Test 3</div>
         <div className="container top-margin-small-1">
             <div className="row">
                 <div className="col l12">

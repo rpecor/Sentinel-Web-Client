@@ -23,13 +23,14 @@ export default React.createClass({
         <div className="row">
           <div className="col l4">
             <h5>Profile</h5>
-            <img src={"/resources/img/" + this.state.user._id +".jpeg"} className="top-margin-small-0 z-depth-4 profile-picture" />
+            <img src={"/resources/img/" + this.state.user._id +".jpg"} className="top-margin-small-0 z-depth-4 profile-picture" />
           </div>
           </div>
           <div className="row">
             <div className="col l12">
                 Name: {this.state.user.firstName} {this.state.user.lastName}< br />
                 Email: { this.state.user.email }<br />
+                ID: { this.state.user._id }
             </div>
         </div>
       </div>
